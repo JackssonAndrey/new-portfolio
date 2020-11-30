@@ -29,6 +29,7 @@ import LogoHtml from './assets/images/logo-html.png';
 import LogoMysql from './assets/images/logo-mysql.png';
 import LogoAws from './assets/images/logo-aws.png';
 import LogoHeroku from './assets/images/logo-heroku.png';
+import ArrowDown from './assets/images/arrow-down.png';
 
 import './App.css';
 
@@ -86,6 +87,10 @@ const App: React.FC = () => {
         <aside className="logo-right">
           <img src={Logo} alt="Andrey Araújo" />
         </aside>
+      </div>
+
+      <div className="img-arrow-down">
+        <img src={ArrowDown} alt="Arrow down" />
       </div>
 
       <div id="my-projects" className="my-projects">
