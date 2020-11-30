@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Varela&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,11 @@ body {
   background: #273244;
   height: 100vh;
   width: 100vw;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-family: 'Varela', sans-serif;
 }
 
 .page-header {
@@ -44,11 +51,23 @@ body {
   color: #FFF;
 }
 
+.list-menu li a {
+  text-decoration: none;
+  color: #FFF;
+
+  transition: color 0.2s;
+}
+
+.list-menu li a:hover {
+  color: #92b1ff;
+}
+
 .apresentation {
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  height: 600px;
   width: 100vw;
+  padding: 30px;
 }
 
 .text-left {
@@ -89,7 +108,7 @@ body {
 
 .logo-right img {
   flex: 1;
-  width: 250px;
+  width: 350px;
 }
 
 .my-projects {
@@ -110,6 +129,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 
   margin-top: 5%;
   padding: 3%;
@@ -163,7 +183,7 @@ body {
 }
 
 .about-me {
-  height: 600px;
+  min-height: 700px;
   background: #3871FF;
   padding: 50px;
 }
@@ -176,7 +196,7 @@ body {
 
 .area-about-me {
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -205,3 +225,126 @@ body {
   height: inherit;
   width: inherit;
 }
+
+.area-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn-view-curriculum {
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #273244;
+  color: #FFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+
+.btn-view-curriculum:hover {
+  background: #1c2431;
+}
+
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 500px;
+  min-height: 550px;
+
+  background: #FFF;
+  color: #273244;
+  padding-top: 40px;
+}
+
+.images-techs {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+.list-techs-1 {
+  flex: 1;
+  list-style: none;
+  width: max-content;
+  margin: auto;
+}
+
+.list-techs-1 li {
+  display: inline;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-techs-1 li img {
+  width: 60px;
+  margin: 30px;
+}
+
+.list-techs-2 {
+  flex: 1;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-techs-2 li {
+  display: inline;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-techs-2 li img {
+  width: 60px;
+  margin: 30px;
+}
+
+.list-techs-3 {
+  flex: 1;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+}
+
+.list-techs-3 li {
+  display: inline;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-techs-3 li img {
+  width: 60px;
+  margin: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.footer p {
+  color: #FFF;
+  font-size: small;
+}
+
+.img-footer {
+  max-width: 100px;
+  margin: 20px;
+}
+
