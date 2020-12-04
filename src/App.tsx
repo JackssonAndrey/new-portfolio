@@ -6,6 +6,16 @@ import {
   FaGithubSquare,
 } from 'react-icons/fa';
 
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Slide,
+} from '@material-ui/core';
+import { TransitionProps } from '@material-ui/core/transitions';
+
 import LogoMenu from './assets/images/logo-menu.svg';
 import Logo from './assets/images/logo.svg';
 import ImgProject from './assets/images/nlw2.png';
@@ -33,13 +43,33 @@ import ArrowDown from './assets/images/arrow-down.png';
 
 import './App.css';
 
+const Transition = React.forwardRef(function Transition(
+  // eslint-disable-next-line react/require-default-props
+  props: TransitionProps & { children?: React.ReactElement<any, any> },
+  ref: React.Ref<unknown>,
+) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 const App: React.FC = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <main className="page-main">
       <header id="page-header" className="page-header">
         <nav className="menu-header">
           <span className="img-logo-menu">
-            <img src={LogoMenu} alt="Andrey Araújo" />
+            <a href="#page-header">
+              <img src={LogoMenu} alt="Andrey Araújo" />
+            </a>
           </span>
 
           <ul className="list-menu">
@@ -69,18 +99,32 @@ const App: React.FC = () => {
           </p>
 
           <ul className="list-social">
-            <li>
-              <FaInstagramSquare size={24} />
-            </li>
-            <li>
-              <FaLinkedin size={24} />
-            </li>
-            <li>
-              <FaFacebookSquare size={24} />
-            </li>
-            <li>
-              <FaGithubSquare size={24} />
-            </li>
+            <a
+              href="https://www.instagram.com/andreyaraujo.dev/"
+              target="blank"
+            >
+              <li>
+                <FaInstagramSquare size={24} />
+              </li>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jacksson-andrey/"
+              target="blank"
+            >
+              <li>
+                <FaLinkedin size={24} />
+              </li>
+            </a>
+            <a href="https://www.facebook.com/andreyaraujo.dev" target="blank">
+              <li>
+                <FaFacebookSquare size={24} />
+              </li>
+            </a>
+            <a href="https://github.com/JackssonAndrey" target="blank">
+              <li>
+                <FaGithubSquare size={24} />
+              </li>
+            </a>
           </ul>
         </aside>
 
@@ -217,10 +261,43 @@ const App: React.FC = () => {
         </div>
 
         <div className="area-btn">
-          <button type="button" className="btn-view-curriculum">
+          <button
+            type="button"
+            className="btn-view-curriculum"
+            onClick={handleClickOpen}
+          >
             Veja meu currículo
           </button>
         </div>
+
+        <Dialog
+          maxWidth="lg"
+          open={open}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose}
+          aria-labelledby="alert-dialog-slide-title"
+          aria-describedby="alert-dialog-slide-description"
+        >
+          <DialogTitle id="alert-dialog-slide-title">
+            Saiba mais sobre mim vendo meu currículo
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-slide-description">
+              Let Google help apps determine location. This means sending
+              anonymous location data to Google, even when no apps are running.
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <button
+              type="button"
+              className="btn-view-curriculum"
+              onClick={handleClose}
+            >
+              Fechar
+            </button>
+          </DialogActions>
+        </Dialog>
       </div>
 
       <div id="technologies" className="technologies">
@@ -290,22 +367,35 @@ const App: React.FC = () => {
 
       <footer id="footer" className="footer">
         <ul className="list-social">
-          <li>
-            <FaInstagramSquare size={24} />
-          </li>
-          <li>
-            <FaLinkedin size={24} />
-          </li>
-          <li>
-            <FaFacebookSquare size={24} />
-          </li>
-          <li>
-            <FaGithubSquare size={24} />
-          </li>
+          <a href="https://www.instagram.com/andreyaraujo.dev/" target="blank">
+            <li>
+              <FaInstagramSquare size={24} />
+            </li>
+          </a>
+          <a href="https://www.linkedin.com/in/jacksson-andrey/" target="blank">
+            <li>
+              <FaLinkedin size={24} />
+            </li>
+          </a>
+          <a href="https://www.facebook.com/andreyaraujo.dev" target="blank">
+            <li>
+              <FaFacebookSquare size={24} />
+            </li>
+          </a>
+          <a href="https://github.com/JackssonAndrey" target="blank">
+            <li>
+              <FaGithubSquare size={24} />
+            </li>
+          </a>
         </ul>
-        <img src={Logo} alt="Andrey Araújo" className="img-footer" />
 
-        <p>Desenvolvido e criado por Andrey Araújo - 2020</p>
+        <a href="#page-header">
+          <img src={Logo} alt="Andrey Araújo" className="img-footer" />
+        </a>
+
+        <p>
+          Desenvolvido e criado por Andrey Araújo - {new Date().getFullYear()}
+        </p>
         <p>andreyaraujo.dev</p>
       </footer>
     </main>
