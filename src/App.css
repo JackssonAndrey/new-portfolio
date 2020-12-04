@@ -210,7 +210,7 @@ h1 {
 
 .about-me {
   min-height: 700px;
-  background: #3871FF;
+  background: linear-gradient(0.28deg, #2261FF 0.26%, rgba(66, 120, 255, 0) 99.78%);
   padding: 50px;
 }
 
@@ -250,6 +250,10 @@ h1 {
 .img-about-me img {
   height: inherit;
   width: inherit;
+}
+
+.img-about-me img:nth-child(2) {
+  display: none;
 }
 
 .area-btn {
@@ -297,6 +301,10 @@ h1 {
   align-items: center;
   width: 80%;
   margin-top: 20px;
+}
+
+.images-techs img {
+  display: none;
 }
 
 .list-techs-1 {
@@ -358,6 +366,10 @@ h1 {
   margin: 30px 40px;
 }
 
+.info-mobile {
+  display: none;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -376,3 +388,121 @@ h1 {
   margin: 20px;
 }
 
+@media (max-width: 414px) {
+  .page-header {
+    display: none;
+  }
+
+  .apresentation {
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+
+  .apresentation h1:nth-child(2) {
+    font-size: 18pt;
+    color: #FFF;
+  }
+
+  .text-left {
+    align-items: center;
+  }
+
+  .text-left p {
+    display: none;
+  }
+
+  .logo-right {
+    align-items: center;
+  }
+
+  .logo-right img {
+    width: 230px;
+  }
+
+  .my-projects {
+    display: none;
+  }
+
+  .about-me {
+    background: #273244;
+    padding: 20px;
+  }
+
+  .about-me h1 {
+    margin-bottom: 0;
+  }
+
+  .area-about-me {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .img-about-me {
+    height: auto;
+    align-items: center;
+  }
+
+  .img-about-me img:nth-child(1) {
+    display: none;
+  }
+
+  .img-about-me img:nth-child(2) {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .text-about-me {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .area-btn {
+    display: none;
+  }
+
+  .technologies {
+    padding-top: 0;
+    min-height: 480px;
+    text-align: center;
+  }
+
+  .technologies h1 {
+    margin: 20px;
+    font-size: 18pt;
+  }
+
+  .images-techs img {
+    display: block;
+  }
+
+  .list-techs-1 {
+    display: none;
+  }
+
+  .list-techs-2 {
+    display: none;
+  }
+
+  .list-techs-3 {
+    display: none;
+  }
+
+  .info-mobile {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .info-mobile p:nth-child(2) {
+    margin-top: 5px;
+  }
+}

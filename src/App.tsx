@@ -40,6 +40,8 @@ import LogoMysql from './assets/images/logo-mysql.png';
 import LogoAws from './assets/images/logo-aws.png';
 import LogoHeroku from './assets/images/logo-heroku.png';
 import ArrowDown from './assets/images/arrow-down.png';
+import FotoPerfil from './assets/images/foto-perfil.png';
+import BackgroundTechs from './assets/images/bg-techs.png';
 
 import './App.css';
 
@@ -232,7 +234,7 @@ const App: React.FC = () => {
       </div>
 
       <div id="about-me" className="about-me">
-        <h1>Sobre</h1>
+        <h1>Quem sou eu?</h1>
         <div className="area-about-me">
           <aside className="text-about-me">
             <p>
@@ -257,6 +259,11 @@ const App: React.FC = () => {
 
           <aside className="img-about-me">
             <img src={ImgPerfil} alt="Andrey Araújo" />
+            <img
+              src={FotoPerfil}
+              className="img-perfil-mobile"
+              alt="Andrey Araújo"
+            />
           </aside>
         </div>
 
@@ -301,7 +308,7 @@ const App: React.FC = () => {
       </div>
 
       <div id="technologies" className="technologies">
-        <h1>Tecnologias</h1>
+        <h1>Algumas das tecnologias que mais utilizo no dia a dia</h1>
         <div className="images-techs">
           <ul className="list-techs-1">
             <li>
@@ -362,7 +369,21 @@ const App: React.FC = () => {
               <img src={LogoHeroku} alt="Heroku" />
             </li>
           </ul>
+
+          <img src={BackgroundTechs} alt="Techs" />
         </div>
+      </div>
+
+      <div className="info-mobile">
+        <p>
+          Quer saber quais projetos já fiz ou estou fazendo? Visita meu Github,
+          la tem tudo bem explicado.
+        </p>
+        <p>
+          Se tiver alguma dúvida, minhas redes sociais estão ai em baixo,
+          aproveita e me segue também, compartilho muito conteúdo da área,
+          aposto que vai gostar e te ajudar em algum momento.
+        </p>
       </div>
 
       <footer id="footer" className="footer">
