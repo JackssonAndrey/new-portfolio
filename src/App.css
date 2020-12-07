@@ -235,6 +235,7 @@ h1 {
 
   margin-right: 20px;
   color: #FFF;
+  font-size: 18pt;
 }
 
 .img-about-me {
@@ -287,83 +288,36 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height: 500px;
-  min-height: 550px;
+  max-height: 550px;
+  min-height: 600px;
 
   background: #FFF;
   color: #273244;
   padding-top: 40px;
 }
 
+.technologies h1 {
+  margin-bottom: 20px;
+}
+
 .images-techs {
   flex: 1;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 80%;
   margin-top: 20px;
 }
 
-.images-techs img {
+.bg-techs-web {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bg-techs-mobile {
   display: none;
-}
-
-.list-techs-1 {
-  flex: 1;
-  list-style: none;
-  width: max-content;
-  margin: auto;
-}
-
-.list-techs-1 li {
-  display: inline;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-techs-1 li img {
-  width: 60px;
-  margin: 30px 40px;
-}
-
-.list-techs-2 {
-  flex: 1;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  margin: auto;
-}
-
-.list-techs-2 li {
-  display: inline;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-techs-2 li img {
-  width: 60px;
-  margin: 30px 60px;
-}
-
-.list-techs-3 {
-  flex: 1;
-  list-style: none;
-  width: max-content;
-  margin: auto;
-}
-
-.list-techs-3 li {
-  display: inline;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-techs-3 li img {
-  width: 60px;
-  margin: 30px 40px;
 }
 
 .info-mobile {
@@ -425,7 +379,6 @@ h1 {
   }
 
   .about-me {
-    background: #273244;
     padding: 20px;
   }
 
@@ -477,29 +430,22 @@ h1 {
     font-size: 18pt;
   }
 
-  .images-techs img {
+  .bg-techs-web {
+    display: none;
+  }
+
+  .bg-techs-mobile {
     display: block;
-  }
-
-  .list-techs-1 {
-    display: none;
-  }
-
-  .list-techs-2 {
-    display: none;
-  }
-
-  .list-techs-3 {
-    display: none;
   }
 
   .info-mobile {
     display: block;
     color: #FFF;
     text-align: center;
-    height: 200px;
+    height: 250px;
     padding: 20px;
     margin-top: 20px;
+    font-size: 15pt;
   }
 
   .info-mobile p:nth-child(2) {

@@ -6,64 +6,20 @@ import {
   FaGithubSquare,
 } from 'react-icons/fa';
 
-import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  Slide,
-} from '@material-ui/core';
-import { TransitionProps } from '@material-ui/core/transitions';
-
 import LogoMenu from './assets/images/logo-menu.svg';
 import Logo from './assets/images/logo.svg';
 import ImgProject from './assets/images/nlw2.png';
 import ImgProject2 from './assets/images/nlw2.2.png';
 import ImgProject3 from './assets/images/nlw3.png';
 import ImgPerfil from './assets/images/perfil.jpg';
-import LogoPython from './assets/images/logo-python.png';
-import LogoJs from './assets/images/logo-js.png';
-import LogoNode from './assets/images/logo-nodejs.png';
-import LogoTs from './assets/images/logo-ts.png';
-import LogoPhp from './assets/images/logo-php.png';
-import LogoDjango from './assets/images/logo-django.png';
-import LogoBootstrap from './assets/images/logo-bootstrap.png';
-import LogoJquery from './assets/images/logo-jquery.png';
-import LogoMaterial from './assets/images/logo-materialui.png';
-import LogoLaravel from './assets/images/logo-laravel.png';
-import LogoReact from './assets/images/logo-react.png';
-import LogoGithub from './assets/images/logo-github.png';
-import LogoCss from './assets/images/logo-css.png';
-import LogoHtml from './assets/images/logo-html.png';
-import LogoMysql from './assets/images/logo-mysql.png';
-import LogoAws from './assets/images/logo-aws.png';
-import LogoHeroku from './assets/images/logo-heroku.png';
 import ArrowDown from './assets/images/arrow-down.png';
 import FotoPerfil from './assets/images/foto-perfil.png';
 import BackgroundTechs from './assets/images/bg-techs.png';
+import BackgroundTechsWeb from './assets/images/bg-techs-web.png';
 
 import './App.css';
 
-const Transition = React.forwardRef(function Transition(
-  // eslint-disable-next-line react/require-default-props
-  props: TransitionProps & { children?: React.ReactElement<any, any> },
-  ref: React.Ref<unknown>,
-) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
-
 const App: React.FC = () => {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <main className="page-main">
       <header id="page-header" className="page-header">
@@ -238,22 +194,21 @@ const App: React.FC = () => {
         <div className="area-about-me">
           <aside className="text-about-me">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
-              provident eveniet omnis modi iusto doloremque iure tenetur
-              laborum. Unde possimus alias rerum id, est culpa consequuntur
-              minus soluta omnis at. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Ducimus, provident eveniet omnis modi iusto
-              doloremque iure tenetur laborum. Unde possimus alias rerum id, est
-              culpa consequuntur minus soluta omnis at.
+              Fala dev, sou Andrey Araújo, atualmente sou desenvolvedor Full
+              Stack. Programo em PHP, Lavavel, Javascript, Nodejs, React, React
+              Native, mas confesso que minha stack favorita é Nodejs, React e
+              React Native. Sou formado em Análise e Desenvolvimento de
+              Sistemas. Tive o primeiro contato com programação ainda no ensino
+              médio. Desde então sempre procuro desenvolver pequenos e médios
+              sistemas, para estar em constante aprendizado. Os erros do dia a
+              dia nos fazem crescer e amadurecer como desenvolvedores e
+              profissionais.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
-              provident eveniet omnis modi iusto doloremque iure tenetur
-              laborum. Unde possimus alias rerum id, est culpa consequuntur
-              minus soluta omnis at. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Ducimus, provident eveniet omnis modi iusto
-              doloremque iure tenetur laborum. Unde possimus alias rerum id, est
-              culpa consequuntur minus soluta omnis at.
+              Atualmente trabalho como freelancer no desenvolvimento web, desde
+              sites simples até sistemas mais complexos. Caso queira saber mais
+              a respeito, minhas redes socias estão mais em baixo para entrar em
+              contato comigo.
             </p>
           </aside>
 
@@ -266,111 +221,13 @@ const App: React.FC = () => {
             />
           </aside>
         </div>
-
-        <div className="area-btn">
-          <button
-            type="button"
-            className="btn-view-curriculum"
-            onClick={handleClickOpen}
-          >
-            Veja meu currículo
-          </button>
-        </div>
-
-        <Dialog
-          maxWidth="lg"
-          open={open}
-          TransitionComponent={Transition}
-          keepMounted
-          onClose={handleClose}
-          aria-labelledby="alert-dialog-slide-title"
-          aria-describedby="alert-dialog-slide-description"
-        >
-          <DialogTitle id="alert-dialog-slide-title">
-            Saiba mais sobre mim vendo meu currículo
-          </DialogTitle>
-          <DialogContent>
-            <DialogContentText id="alert-dialog-slide-description">
-              Let Google help apps determine location. This means sending
-              anonymous location data to Google, even when no apps are running.
-            </DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <button
-              type="button"
-              className="btn-view-curriculum"
-              onClick={handleClose}
-            >
-              Fechar
-            </button>
-          </DialogActions>
-        </Dialog>
       </div>
 
       <div id="technologies" className="technologies">
         <h1>Algumas das tecnologias que mais utilizo no dia a dia</h1>
         <div className="images-techs">
-          <ul className="list-techs-1">
-            <li>
-              <img src={LogoPython} alt="Python" />
-            </li>
-            <li>
-              <img src={LogoJs} alt="Javascript" />
-            </li>
-            <li>
-              <img src={LogoNode} alt="Nodejs" />
-            </li>
-            <li>
-              <img src={LogoTs} alt="Typescript" />
-            </li>
-            <li>
-              <img src={LogoPhp} alt="PHP" />
-            </li>
-          </ul>
-
-          <ul className="list-techs-2">
-            <li>
-              <img src={LogoDjango} alt="Django" />
-            </li>
-            <li>
-              <img src={LogoBootstrap} alt="Bootstrap" />
-            </li>
-            <li>
-              <img src={LogoJquery} alt="JQuery" />
-            </li>
-            <li>
-              <img src={LogoMaterial} alt="Material-ui" />
-            </li>
-            <li>
-              <img src={LogoLaravel} alt="Laravel" />
-            </li>
-            <li>
-              <img src={LogoReact} alt="React" />
-            </li>
-          </ul>
-
-          <ul className="list-techs-3">
-            <li>
-              <img src={LogoGithub} alt="Github" />
-            </li>
-            <li>
-              <img src={LogoCss} alt="CSS" />
-            </li>
-            <li>
-              <img src={LogoHtml} alt="HTML" />
-            </li>
-            <li>
-              <img src={LogoMysql} alt="MySQL" />
-            </li>
-            <li>
-              <img src={LogoAws} alt="AWS" />
-            </li>
-            <li>
-              <img src={LogoHeroku} alt="Heroku" />
-            </li>
-          </ul>
-
-          <img src={BackgroundTechs} alt="Techs" />
+          <img src={BackgroundTechsWeb} className="bg-techs-web" alt="Techs" />
+          <img src={BackgroundTechs} className="bg-techs-mobile" alt="Techs" />
         </div>
       </div>
 
