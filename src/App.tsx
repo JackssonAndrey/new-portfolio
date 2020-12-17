@@ -8,9 +8,12 @@ import {
 
 import LogoMenu from './assets/images/logo-menu.svg';
 import Logo from './assets/images/logo.svg';
-import ImgProject from './assets/images/nlw2.png';
-import ImgProject2 from './assets/images/nlw2.2.png';
-import ImgProject3 from './assets/images/nlw3.png';
+import ImgProject from './assets/images/api-github.png';
+import ImgProject2 from './assets/images/semana-omnistack-11.png';
+import ImgProject3 from './assets/images/nlw2.2.png';
+import ImgProject4 from './assets/images/ecoleta.svg';
+import ImgProject5 from './assets/images/login-jwt.svg';
+import ImgProject6 from './assets/images/login-passport.svg';
 import ImgPerfil from './assets/images/perfil.jpg';
 import ArrowDown from './assets/images/arrow-down.png';
 import FotoPerfil from './assets/images/foto-perfil.png';
@@ -108,12 +111,21 @@ const App: React.FC = () => {
               <img src={ImgProject} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Aplicação para busca de perfis e repositórios do GitHub. Com
+              frontend em React, consumindo API do GitHub.
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/api-github-repos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
 
@@ -122,12 +134,21 @@ const App: React.FC = () => {
               <img src={ImgProject2} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Aplicação criada na Semana OmniStack 11. Para conectar ONGs e
+              outras instituições a pessoas que tem disponibilidade para ajudar
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/be-the-hero"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
 
@@ -136,54 +157,90 @@ const App: React.FC = () => {
               <img src={ImgProject3} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Aplicação criada na Next Level Week 02, da Rocketseat. Serve para
+              auxiliar na conexão entre os alunos e os professores.
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/next-level-week-02"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
 
           <div className="card-project">
             <span className="card-img">
-              <img src={ImgProject} alt="Imagem projeto" />
+              <img src={ImgProject4} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              É uma forma de conectar entidades de coleta de resíduos orgânicos
+              e inorgânicos as pessoas que precisam descartar seus resíduos.
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/next-level-week"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
 
           <div className="card-project">
             <span className="card-img">
-              <img src={ImgProject2} alt="Imagem projeto" />
+              <img src={ImgProject5} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Aplicação feita com backend em Nodejs e frontend em React.
+              Trata-se de um login básico usando JWT.
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/login-jwt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
 
           <div className="card-project">
             <span className="card-img">
-              <img src={ImgProject3} alt="Imagem projeto" />
+              <img src={ImgProject6} alt="Imagem projeto" />
             </span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Aplicação para login de usuários com passport, usando
+              LocalStrategy. Com backend em Nodejs e frontend usando EJS.
+            </p>
 
             <span className="card-footer">
-              <button type="button" className="btn-view-code">
-                Código
-              </button>
+              <a
+                href="https://github.com/JackssonAndrey/login-passport"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn-view-code">
+                  Código
+                </button>
+              </a>
             </span>
           </div>
         </article>
