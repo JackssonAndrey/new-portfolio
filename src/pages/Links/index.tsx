@@ -4,17 +4,16 @@ import ImgPerfil from '../../assets/images/foto-perfil.png';
 import Logo from '../../assets/images/logo.svg';
 
 import './styles.css';
-import '../../App.css';
 
 const Links: React.FC = () => {
   return (
     <>
-      <header>
+      <header className="header-links">
         <img src={ImgPerfil} alt="andrey araujo" />
         <p>andreyaraujo.dev</p>
         <p>Links úteis caso queira me conhecer mais.</p>
       </header>
-      <main>
+      <main className="main-links">
         <a
           href="https://andreyaraujo.dev"
           target="_blank"
@@ -62,7 +61,7 @@ const Links: React.FC = () => {
         </a>
       </main>
 
-      <footer id="footer" className="footer">
+      <footer className="footer">
         <img src={Logo} alt="Andrey Araújo" className="img-footer" />
 
         <p>

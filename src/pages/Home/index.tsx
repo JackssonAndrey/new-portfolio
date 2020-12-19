@@ -20,7 +20,6 @@ import FotoPerfil from '../../assets/images/foto-perfil.png';
 import BackgroundTechs from '../../assets/images/bg-techs.png';
 import BackgroundTechsWeb from '../../assets/images/bg-techs-web.png';
 
-import '../../App.css';
 import './styles.css';
 
 const Home: React.FC = () => {
