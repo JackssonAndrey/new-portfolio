@@ -14,9 +14,9 @@ import ImgProject3 from '../../assets/images/nlw2.2.png';
 import ImgProject4 from '../../assets/images/ecoleta.svg';
 import ImgProject5 from '../../assets/images/login-jwt.svg';
 import ImgProject6 from '../../assets/images/login-passport.svg';
-import ImgPerfil from '../../assets/images/perfil.jpg';
+import ImgPerfil from '../../assets/images/perfil.png';
 import ArrowDown from '../../assets/images/arrow-down.png';
-import FotoPerfil from '../../assets/images/foto-perfil.png';
+import FotoPerfil from '../../assets/images/perfil-menor.png';
 import BackgroundTechs from '../../assets/images/bg-techs.png';
 import BackgroundTechsWeb from '../../assets/images/bg-techs-web.png';
 
