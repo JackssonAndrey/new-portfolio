@@ -34,7 +34,7 @@
 - [Tecnologias](#tecnologias)
 - [Instalação e start](#instalação-e-start)
   - [Clonagem](#clonagem)
-    - [Web](#web)
+  - [Web](#web)
 - [Licença](#licença)
 
 ## Sobre o projeto
